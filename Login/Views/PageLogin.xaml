@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.Views.PageLogin">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray">
+
+            <Entry x:Name="txtnombre" 
+                   Placeholder="Nombres" 
+                   Keyboard="Text"
+                   TextColor="Black"
+                   Margin="20,20,20,0"/>
+
+            <Entry x:Name="txtapellidos" Placeholder="Apellidos" Keyboard="Text" 
+                   TextColor="Black"
+                   Margin="20,20,20,0"/>
+
+            <Picker Title="Seleccione Edad" TitleColor="Black" Margin="20,20,20,0" x:Name="cbedad">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>13 o Menor</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                        <x:String>16</x:String>
+                        <x:String>17</x:String>
+                        <x:String>18</x:String>
+                        <x:String>19</x:String>
+                        <x:String>20</x:String>
+                        <x:String>21</x:String>
+                        <x:String>22</x:String>
+                        <x:String>23</x:String>
+                        <x:String>24</x:String>
+                        <x:String>25</x:String>
+                        <x:String>26 o Mayor</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="txtcorreo" Placeholder="Correo Electronico" Keyboard="Text"
+                   TextColor="Black"
+                   Margin="20,20,20,0"/>
+
+            <Button x:Name="btnmostrar" Text="Enviar" Clicked="btnmostrar_Clicked"                  
+                    Margin="20,20,20,0"
+                    BackgroundColor="LightSalmon"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
