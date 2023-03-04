@@ -29,6 +29,10 @@
                 VerticalOptions="Start" 
                 HorizontalOptions="Start" />
 
+            <Label Text="{Binding direccion}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

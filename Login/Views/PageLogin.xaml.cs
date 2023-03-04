@@ -24,9 +24,14 @@ namespace Login.Views
                 nombre = txtnombre.Text,
                 apellidos = txtapellidos.Text,
                 correo = txtcorreo.Text,
+                direccion = txtdireccion.Text,
                 edad = cbedad.SelectedItem.ToString()
             };
 
+            if (await App.DBlog.SaveListaa(infor) > 0)
+                await DisplayAlert("Aviso", "Alumno Ingresado", "OK");
+            else
+                await DisplayAlert("Aviso", "Error", "OK");
 
             var page = new Views.PageCargInfo();
             page.BindingContext = infor;

@@ -40,6 +40,10 @@
                    TextColor="Black"
                    Margin="20,20,20,0"/>
 
+            <Entry x:Name="txtdireccion" Placeholder="Direccion" Keyboard="Text"
+                   TextColor="Black"
+                   Margin="20,20,20,0"/>
+
             <Button x:Name="btnmostrar" Text="Enviar" Clicked="btnmostrar_Clicked"                  
                     Margin="20,20,20,0"
                     BackgroundColor="LightSalmon"/>
